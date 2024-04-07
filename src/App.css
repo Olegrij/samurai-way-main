@@ -28,6 +28,35 @@
   color: #61dafb;
 }
 
+.app-wrapper {
+  display: grid!important;
+  grid-template-areas:
+  "h h"
+  "s p";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  width: 1200px;
+}
+
+.app-header {
+  grid-area: h;
+  background-color: #61dafb;
+}
+
+.app-sidebar{
+  grid-area: s;
+  background-color: red;
+}
+
+.app-profile {
+  grid-area: p;
+  background-color: blue;
+}
+
+.app-header img{
+  width: 4rem !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
